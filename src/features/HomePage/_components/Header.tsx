@@ -20,22 +20,18 @@ export function Header() {
       style={{ position: "sticky", top: 0, backdropFilter: "blur(20px)" }}
     >
       <Group justify="space-between" p={"10px 20px"}>
-        <Link href="/">
+        <Link href="/" style={{ textDecoration: "none" }}>
           <Text c="rgba(32, 16, 12, 0.7)" size="24px">
             utopi-a.dev
           </Text>
         </Link>
         <Box>
           <Group gap="32px">
-            <Anchor
-              c="rgba(32, 16, 12, 0.7)"
-              size="24px"
-              href="https://mantine.dev/"
-              target="_blank"
-              underline="hover"
-            >
-              ABOUT
-            </Anchor>
+            <Link href="/about" style={{ textDecoration: "none" }}>
+              <Text c="rgba(32, 16, 12, 0.7)" size="24px">
+                ABOUT
+              </Text>
+            </Link>
             <Anchor
               c="rgba(32, 16, 12, 0.7)"
               size="24px"
