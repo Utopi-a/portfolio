@@ -32,15 +32,11 @@ export function Header() {
                 ABOUT
               </Text>
             </Link>
-            <Anchor
-              c="rgba(32, 16, 12, 0.7)"
-              size="24px"
-              href="https://mantine.dev/"
-              target="_blank"
-              underline="hover"
-            >
-              WORKS
-            </Anchor>
+            <Link href="/works" style={{ textDecoration: "none" }}>
+              <Text c="rgba(32, 16, 12, 0.7)" size="24px">
+                WORKS
+              </Text>
+            </Link>
             <Anchor
               c="rgba(32, 16, 12, 0.7)"
               size="24px"

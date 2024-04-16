@@ -31,7 +31,7 @@ export function HomePage() {
             ゆーとぴあ
           </Text>
 
-          <Text mt={20} size="18px" c="rgba(32, 16, 12, 0.7)">
+          <Text mt={20} size="18px" c="rgba(32, 16, 12, 0.625)">
             バイオインフォマティクス勉強中
           </Text>
           <Group gap={50} mt={80}>
