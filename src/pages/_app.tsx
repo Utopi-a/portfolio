@@ -24,7 +24,10 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:description"
           content="utopi-a（ゆーとぴあ）のポートフォリオ"
         />
-        <meta property="og:image" content="opengraph-image.jpg" />
+        <meta
+          property="og:image"
+          content="https://www.utopi-a.dev/opengraph-image.jpg"
+        />
       </Head>
       <MantineProvider theme={theme}>
         <Component {...pageProps} />
