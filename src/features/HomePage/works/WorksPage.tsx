@@ -16,8 +16,10 @@ import {
   Divider,
   List,
 } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 
 export function WorksPage() {
+  const matches = useMediaQuery("(min-width: 768px)");
   return (
     <>
       <Header />
@@ -43,16 +45,16 @@ export function WorksPage() {
             size="xl"
             listStyleType="circle"
             c="rgba(32, 16, 12)"
+            {...(!matches && { p: "0px 35px 0px 10px" })}
           >
             <List.Item>
               <Anchor
                 href="https://credit-checker-biol.vercel.app/"
                 c="rgba(32, 16, 12)"
-                size="24px"
                 target="_blank"
                 underline="hover"
               >
-                <Title order={2} size={20}>
+                <Title order={2} {...(!matches && { size: "18px" })}>
                   生物学類21生向け卒業要件チェッカー
                 </Title>
               </Anchor>

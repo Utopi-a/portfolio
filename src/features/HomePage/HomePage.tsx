@@ -1,3 +1,4 @@
+import { useMediaQuery } from "@mantine/hooks";
 import { Footer } from "./_components/Footer";
 import { Header } from "./_components/Header";
 import {
@@ -14,6 +15,8 @@ import {
 } from "@mantine/core";
 
 export function HomePage() {
+  const matches = useMediaQuery("(min-width: 768px)");
+
   return (
     <>
       <Header />
