@@ -4,6 +4,7 @@ import "@mantine/core/styles.css";
 
 import type { AppProps } from "next/app";
 import { createTheme, MantineProvider } from "@mantine/core";
+import Head from "next/head";
 
 const theme = createTheme({
   /** Put your mantine theme override here */
@@ -11,8 +12,23 @@ const theme = createTheme({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <MantineProvider theme={theme}>
-      <Component {...pageProps} />
-    </MantineProvider>
+    <>
+      <Head>
+        <title>utopi-a.dev</title>
+        <meta
+          name="description"
+          content="utopi-a（ゆーとぴあ）のポートフォリオ"
+        />
+        <meta property="og:title" content="utopi-a.dev" />
+        <meta
+          property="og:description"
+          content="utopi-a（ゆーとぴあ）のポートフォリオ"
+        />
+        <meta property="og:image" content="opengraph-image.jpg" />
+      </Head>
+      <MantineProvider theme={theme}>
+        <Component {...pageProps} />
+      </MantineProvider>
+    </>
   );
 }
