@@ -7,9 +7,5 @@ import { Box } from "@mantine/core";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
-    <Box bg="rgb(255, 231, 255)">
-      <HomePage />
-    </Box>
-  );
+  return <HomePage />;
 }

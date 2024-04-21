@@ -19,13 +19,21 @@ export function Header() {
     <>
       {matches ? (
         <Box
-          h={80}
-          maw={1500}
-          m={"0px auto 20px auto"}
-          pt={40}
-          style={{ position: "sticky", top: 0, backdropFilter: "blur(20px)" }}
+          h={60}
+          pt={10}
+          style={{
+            position: "sticky",
+            top: 0,
+            backdropFilter: "blur(20px)",
+            zIndex: 1000000,
+          }}
         >
-          <Group justify="space-between" p={"10px 20px"}>
+          <Group
+            justify="space-between"
+            p={"10px 20px"}
+            maw={1500}
+            m={"0px auto 20px auto"}
+          >
             <Link href="/" style={{ textDecoration: "none" }}>
               <Text c="rgba(32, 16, 12, 0.7)" size="24px">
                 utopi-a.dev
@@ -36,6 +44,11 @@ export function Header() {
                 <Link href="/about" style={{ textDecoration: "none" }}>
                   <Text c="rgba(32, 16, 12, 0.7)" size="24px">
                     ABOUT
+                  </Text>
+                </Link>
+                <Link href="/blog" style={{ textDecoration: "none" }}>
+                  <Text c="rgba(32, 16, 12, 0.7)" size="24px">
+                    BLOG
                   </Text>
                 </Link>
                 <Link href="/works" style={{ textDecoration: "none" }}>
@@ -62,7 +75,12 @@ export function Header() {
           maw={1500}
           m={"0px auto 20px auto"}
           pt={40}
-          style={{ position: "sticky", top: 0, backdropFilter: "blur(20px)" }}
+          style={{
+            position: "sticky",
+            top: 0,
+            backdropFilter: "blur(20px)",
+            zIndex: 1000000,
+          }}
         >
           <Stack align="center">
             <Link href="/" style={{ textDecoration: "none" }}>
@@ -77,12 +95,18 @@ export function Header() {
                     ABOUT
                   </Text>
                 </Link>
+                <Link href="/blog" style={{ textDecoration: "none" }}>
+                  <Text c="rgba(32, 16, 12, 0.7)" size="24px">
+                    BLOG
+                  </Text>
+                </Link>
                 <Link href="/works" style={{ textDecoration: "none" }}>
                   <Text c="rgba(32, 16, 12, 0.7)" size="24px">
                     WORKS
                   </Text>
                 </Link>
-                <Anchor
+
+                {/* <Anchor
                   c="rgba(32, 16, 12, 0.7)"
                   size="24px"
                   href="https://twitter.com/ITF_biol21"
@@ -90,7 +114,7 @@ export function Header() {
                   underline="hover"
                 >
                   CONTACT
-                </Anchor>
+                </Anchor> */}
               </Group>
             </Box>
           </Stack>

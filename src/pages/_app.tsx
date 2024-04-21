@@ -1,6 +1,7 @@
 // Import styles of packages that you've installed.
 // All packages except `@mantine/hooks` require styles imports
 import "@mantine/core/styles.css";
+import "src/styles/global.css";
 
 import type { AppProps } from "next/app";
 import { createTheme, MantineProvider } from "@mantine/core";

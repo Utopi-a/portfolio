@@ -7,9 +7,5 @@ import { AboutPage } from "@/features/HomePage/about/AboutPage";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function About() {
-  return (
-    <Box bg="rgb(255, 231, 255)">
-      <AboutPage />
-    </Box>
-  );
+  return <AboutPage />;
 }
