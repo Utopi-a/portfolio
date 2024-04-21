@@ -19,6 +19,7 @@ import {
 import { client } from "libs/client";
 import Link from "next/link";
 import parse from "html-react-parser";
+import { createClient } from "microcms-js-sdk";
 
 export default function BlogId({ blog }: { blog: any }) {
   // console.log(blog);

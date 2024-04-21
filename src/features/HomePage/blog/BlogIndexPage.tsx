@@ -17,7 +17,6 @@ import {
   Title,
   SimpleGrid,
 } from "@mantine/core";
-import { client } from "libs/client";
 import Link from "next/link";
 import { ArticleCard } from "./_components/ArticleCard";
 
@@ -47,12 +46,3 @@ export function BlogIndexPage({ blogs }: { blogs: any }) {
     </Stack>
   );
 }
-
-// export const getStaticProps = async () => {
-//   const data = await client.get({ endpoint: "blogs" });
-//   return {
-//     props: {
-//       blog: data.contents,
-//     },
-//   };
-// };

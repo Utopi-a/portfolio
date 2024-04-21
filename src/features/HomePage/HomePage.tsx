@@ -39,10 +39,18 @@ export function HomePage() {
               バイオインフォマティクス勉強中
             </Text>
             <Group gap={50} mt={80}>
-              <Anchor href="https://twitter.com/ITF_biol21" target="_blank">
+              <Anchor
+                href="https://twitter.com/ITF_biol21"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image src="XIcon.png" h={36} w={36} />
               </Anchor>
-              <Anchor href="https://github.com/Utopi-a" target="_blank">
+              <Anchor
+                href="https://github.com/Utopi-a"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image src="mark-github.svg" h={36} w={36} />
               </Anchor>
             </Group>

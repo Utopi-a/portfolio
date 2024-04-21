@@ -67,6 +67,7 @@ html {
 
 .blogContent a:hover {
   color: rgb(0, 0, 200);
+  text-decoration: underline;
 }
 
 .blogContent blockquote {

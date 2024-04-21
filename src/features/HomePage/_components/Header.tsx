@@ -61,6 +61,7 @@ export function Header() {
                   size="24px"
                   href="https://twitter.com/ITF_biol21"
                   target="_blank"
+                  rel="noopener noreferrer"
                   underline="hover"
                 >
                   CONTACT

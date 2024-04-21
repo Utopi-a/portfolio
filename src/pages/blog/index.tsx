@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { client } from "libs/client";
 import { BlogIndexPage } from "@/features/HomePage/blog/BlogIndexPage";
+import { createClient } from "microcms-js-sdk";
 
 export default function Blog({ blogs }: { blogs: any }) {
   return <BlogIndexPage blogs={blogs} />;
