@@ -27,7 +27,9 @@ export function ArticleCard({ blog }: { blog: any }) {
         </Title>
         <Group justify="space-between">
           <Text size="12px">{formattedPublishedDate}</Text>
-          <Text size="12px">カテゴリ：{blog.category ?? "ないよ(笑)"}</Text>
+          <Text size="12px">
+            カテゴリ：{blog?.category?.name ?? "ないよ(笑)"}
+          </Text>
         </Group>
       </Card>
     </>
