@@ -34,24 +34,36 @@ export function Header() {
             maw={1500}
             m={"0px auto 20px auto"}
           >
-            <Link href="/" style={{ textDecoration: "none" }}>
+            <Link href="/" style={{ textDecoration: "none" }} scroll={false}>
               <Text c="rgba(32, 16, 12, 0.7)" size="24px">
                 utopi-a.dev
               </Text>
             </Link>
             <Box>
               <Group gap="32px">
-                <Link href="/about" style={{ textDecoration: "none" }}>
+                <Link
+                  href="/about"
+                  style={{ textDecoration: "none" }}
+                  scroll={false}
+                >
                   <Text c="rgba(32, 16, 12, 0.7)" size="24px">
                     ABOUT
                   </Text>
                 </Link>
-                <Link href="/blog" style={{ textDecoration: "none" }}>
+                <Link
+                  href="/blog"
+                  style={{ textDecoration: "none" }}
+                  scroll={false}
+                >
                   <Text c="rgba(32, 16, 12, 0.7)" size="24px">
                     BLOG
                   </Text>
                 </Link>
-                <Link href="/works" style={{ textDecoration: "none" }}>
+                <Link
+                  href="/works"
+                  style={{ textDecoration: "none" }}
+                  scroll={false}
+                >
                   <Text c="rgba(32, 16, 12, 0.7)" size="24px">
                     WORKS
                   </Text>
@@ -84,24 +96,36 @@ export function Header() {
           }}
         >
           <Stack align="center">
-            <Link href="/" style={{ textDecoration: "none" }}>
+            <Link href="/" style={{ textDecoration: "none" }} scroll={false}>
               <Text c="rgba(32, 16, 12, 0.7)" size="24px">
                 utopi-a.dev
               </Text>
             </Link>
             <Box>
               <Group gap="32px">
-                <Link href="/about" style={{ textDecoration: "none" }}>
+                <Link
+                  href="/about"
+                  style={{ textDecoration: "none" }}
+                  scroll={false}
+                >
                   <Text c="rgba(32, 16, 12, 0.7)" size="24px">
                     ABOUT
                   </Text>
                 </Link>
-                <Link href="/blog" style={{ textDecoration: "none" }}>
+                <Link
+                  href="/blog"
+                  style={{ textDecoration: "none" }}
+                  scroll={false}
+                >
                   <Text c="rgba(32, 16, 12, 0.7)" size="24px">
                     BLOG
                   </Text>
                 </Link>
-                <Link href="/works" style={{ textDecoration: "none" }}>
+                <Link
+                  href="/works"
+                  style={{ textDecoration: "none" }}
+                  scroll={false}
+                >
                   <Text c="rgba(32, 16, 12, 0.7)" size="24px">
                     WORKS
                   </Text>

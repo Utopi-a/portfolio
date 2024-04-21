@@ -3,15 +3,20 @@
 import "@mantine/core/styles.css";
 import "src/styles/global.css";
 
+import { AnimatePresence } from "framer-motion";
+
 import type { AppProps } from "next/app";
 import { createTheme, MantineProvider } from "@mantine/core";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 const theme = createTheme({
   /** Put your mantine theme override here */
 });
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -30,9 +35,11 @@ export default function App({ Component, pageProps }: AppProps) {
           content="https://www.utopi-a.dev/opengraph-image.jpg"
         />
       </Head>
-      <MantineProvider theme={theme}>
-        <Component {...pageProps} />
-      </MantineProvider>
+      <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
+        <MantineProvider theme={theme}>
+          <Component key={router.asPath} {...pageProps} />
+        </MantineProvider>
+      </AnimatePresence>
     </>
   );
 }

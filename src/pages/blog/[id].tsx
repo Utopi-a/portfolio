@@ -20,6 +20,7 @@ import { client } from "libs/client";
 import Link from "next/link";
 import parse from "html-react-parser";
 import { createClient } from "microcms-js-sdk";
+import { motion } from "framer-motion";
 
 export default function BlogId({ blog }: { blog: any }) {
   // console.log(blog);
@@ -33,30 +34,37 @@ export default function BlogId({ blog }: { blog: any }) {
   return (
     <Stack align="stretch" justify="space-between" mih="100vh">
       <Box>
-        <Header />
-        <Box
-          maw={800}
-          p={"10px 20px"}
-          m={"0px auto 20px auto"}
-          c="rgb(32, 16, 12)"
+        <Header />{" "}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.75 }}
         >
-          <Center>
-            <Title order={1} mt={40} size={28}>
-              {blog.title}
-            </Title>
-          </Center>
-          <Space h={20} />
-          <Group justify="space-between">
-            <Group>
-              <Text>投稿日：{formattedPublishedDate}</Text>
-              <Text>更新日：{formattedPublishedDate}</Text>
+          <Box
+            maw={800}
+            p={"10px 20px"}
+            m={"0px auto 20px auto"}
+            c="rgb(32, 16, 12)"
+          >
+            <Center>
+              <Title order={1} mt={40} size={28}>
+                {blog.title}
+              </Title>
+            </Center>
+            <Space h={20} />
+            <Group justify="space-between">
+              <Group>
+                <Text>投稿日：{formattedPublishedDate}</Text>
+                <Text>更新日：{formattedPublishedDate}</Text>
+              </Group>
+              <Text>カテゴリ： {blog.category?.name ?? "ないよ(笑)"}</Text>
             </Group>
-            <Text>カテゴリ： {blog.category?.name ?? "ないよ(笑)"}</Text>
-          </Group>
-          <Divider mt={20} size="md" color="" />
-          <Space h={20} />
-          <Box className="blogContent">{parse(blog.content)}</Box>
-        </Box>
+            <Divider mt={20} size="md" color="" />
+            <Space h={20} />
+            <Box className="blogContent">{parse(blog.content)}</Box>
+          </Box>
+        </motion.div>
       </Box>
       <Footer />
     </Stack>
