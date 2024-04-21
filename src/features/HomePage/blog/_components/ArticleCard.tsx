@@ -25,7 +25,10 @@ export function ArticleCard({ blog }: { blog: any }) {
         <Title order={2} size={18} mt={12}>
           {blog.title}
         </Title>
-        <Text size="12px">{formattedPublishedDate}</Text>
+        <Group justify="space-between">
+          <Text size="12px">{formattedPublishedDate}</Text>
+          <Text size="12px">カテゴリ：{blog.category ?? "ないよ(笑)"}</Text>
+        </Group>
       </Card>
     </>
   );
