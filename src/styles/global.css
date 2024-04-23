@@ -93,3 +93,21 @@ html {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
+.blogContent ul {
+  list-style: circle;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.blogContent ol {
+  list-style: decimal;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.blogContent li {
+  list-style-position: inside;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
