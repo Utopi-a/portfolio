@@ -21,6 +21,7 @@ import Link from "next/link";
 import parse from "html-react-parser";
 import { createClient } from "microcms-js-sdk";
 import { motion } from "framer-motion";
+import { TweetBlogButton } from "@/features/HomePage/blog/_components/TweetBlogButton";
 
 export default function BlogId({ blog }: { blog: any }) {
   // console.log(blog);
@@ -63,6 +64,7 @@ export default function BlogId({ blog }: { blog: any }) {
             <Divider mt={20} size="md" color="" />
             <Space h={20} />
             <Box className="blogContent">{parse(blog.content)}</Box>
+            <TweetBlogButton title={blog.title} />
           </Box>
         </motion.div>
       </Box>
