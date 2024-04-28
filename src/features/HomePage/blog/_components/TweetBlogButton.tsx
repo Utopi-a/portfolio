@@ -62,7 +62,15 @@ export const TweetBlogButton = ({ title }: { title: string }) => {
             size="lg"
             radius="xl"
           >
-            Post on X
+            <Text>Post on</Text>
+            <Image
+              src="/XIcon.png"
+              alt="X logo"
+              w={20}
+              h={20}
+              ml={5}
+              style={{ filter: "invert()" }}
+            />
           </Button>
           <Text style={{ textAlign: "center" }} mt={10}>
             or
