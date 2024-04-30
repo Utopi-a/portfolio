@@ -36,6 +36,7 @@ html {
   font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  border-bottom: 0.25rem solid rgb(222 226 230);
 }
 
 .blogContent h3 {
