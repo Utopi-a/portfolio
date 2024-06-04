@@ -192,6 +192,8 @@ export function AboutPage() {
                 </Title>
                 <Text size={matches ? "20px" : "18px"}>
                   研究室での開発に使用しています。競技プログラミングもPythonでやってます。
+                  <br />
+                  研究の一環で強化学習を始めました。
                 </Text>
               </List.Item>
               <List.Item>
@@ -207,7 +209,7 @@ export function AboutPage() {
                   C++
                 </Title>
                 <Text size={matches ? "20px" : "18px"}>
-                  APG4bの2章まで触れた程度のレベルです。{" "}
+                  APG4bの2章まで触れた程度のレベルです。
                 </Text>
               </List.Item>
             </List>
@@ -231,13 +233,13 @@ export function AboutPage() {
             >
               <List.Item>
                 <Text size={matches ? "20px" : "18px"}>
-                  生物学がわりと好きです。高校生の時には生物学オリンピックに出場後、現在も学生スタッフのSCIBO
+                  生物学がわりと好きです。ゲノムなんかに興味があります。高校生の時には生物学オリンピックに出場後、現在も学生スタッフのSCIBO
                   として参加しています。
                 </Text>
               </List.Item>
               <List.Item>
                 <Text size={matches ? "20px" : "18px"}>
-                  2024年1月のABC337からAtCoderで競技プログラミングをやっています。まだ灰色ですが，少しずつでもレートを上げられるといいな，と思っています。
+                  2024年1月のABC337からAtCoderで競技プログラミングをやっています。まだ茶色ですが，少しずつでもレートを上げられるといいな，と思っています。
                 </Text>
               </List.Item>
               <List.Item>
@@ -252,9 +254,8 @@ export function AboutPage() {
                   <br />
                   現在はスバルの2001年式 インプレッサWRX NB-R
                   GDA-Bに乗っています。ハイオクで燃費が9
-                  km/Lなうえ、よく壊れるの維持費が厳しいです。
-                  カスタムは夢のまた夢です。
-                  クレー射撃もなかなかお財布に厳しいのでなおさらですね。
+                  km/Lなうえ、よく壊れるので維持費が厳しいです。
+                  カスタムよりも修理にお金がかかってます。 でも速くて好き。
                 </Text>
               </List.Item>
             </List>
