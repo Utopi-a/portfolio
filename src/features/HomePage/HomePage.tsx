@@ -45,7 +45,7 @@ export function HomePage() {
               </Text>
 
               <Text mt={20} size="18px" c="rgba(32, 16, 12, 0.625)">
-                バイオインフォマティクス勉強中
+                1日24時間睡眠
               </Text>
               <Group gap={50} mt={80}>
                 <Anchor
