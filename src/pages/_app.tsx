@@ -10,8 +10,20 @@ import { createTheme, MantineProvider } from "@mantine/core";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
+import { Noto_Sans_JP, Kosugi_Maru } from "next/font/google";
+
 const theme = createTheme({
   /** Put your mantine theme override here */
+});
+
+const notoJP = Noto_Sans_JP({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
+
+const kosugi = Kosugi_Maru({
+  weight: ["400"],
+  subsets: ["latin"],
 });
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -36,7 +48,12 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
-        <MantineProvider theme={theme}>
+        <MantineProvider
+          theme={{
+            ...theme,
+            fontFamily: kosugi.style.fontFamily,
+          }}
+        >
           <Component key={router.asPath} {...pageProps} />
         </MantineProvider>
       </AnimatePresence>
