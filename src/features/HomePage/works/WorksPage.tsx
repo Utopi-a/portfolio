@@ -71,6 +71,23 @@ export function WorksPage() {
                     2021年度入学生向けの卒業要件チェッカーです。twinsからダウンロードした成績表のcsvを読み込むことで，取得済み単位数が表示され，卒業に必要な科目項目を把握することができます。
                   </Text>
                 </List.Item>
+                <List.Item>
+                  <Anchor
+                    href="https://r18-rate.utopi-a.dev/"
+                    c="rgba(32, 16, 12)"
+                    target="_blank"
+                    underline="hover"
+                  >
+                    <Title order={2} {...(!matches && { size: "18px" })}>
+                      pixiv R-18率チェッカー
+                    </Title>
+                  </Anchor>
+                  <Text>
+                    pixivの投稿イラストにおけるR-18指定率をチェックするためのWebアプリケーションです。「,」区切りのキーワードを入れることで，キーワードごとのR-18率を表示します。
+                    <br />
+                    また，Excelへの出力も可能です。
+                  </Text>
+                </List.Item>
               </List>
             </Stack>
           </Box>
