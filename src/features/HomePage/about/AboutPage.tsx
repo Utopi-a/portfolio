@@ -183,7 +183,6 @@ export function AboutPage() {
                   <List.Item>tRPC</List.Item>
                   <List.Item>prisma</List.Item>
                   <List.Item>supabase</List.Item>
-                  <List.Item>Azure Functions</List.Item>
                 </List>
               </List.Item>
               <List.Item>
@@ -192,8 +191,6 @@ export function AboutPage() {
                 </Title>
                 <Text size={matches ? "20px" : "18px"}>
                   研究室での開発に使用しています。競技プログラミングもPythonでやってます。
-                  <br />
-                  研究の一環で強化学習を始めました。
                 </Text>
               </List.Item>
               <List.Item>
@@ -210,6 +207,7 @@ export function AboutPage() {
                 </Title>
                 <Text size={matches ? "20px" : "18px"}>
                   APG4bの2章まで触れた程度のレベルです。
+                  <s>もう忘れた。</s>
                 </Text>
               </List.Item>
             </List>
@@ -252,10 +250,14 @@ export function AboutPage() {
                 <Text size={matches ? "20px" : "18px"}>
                   その他、車に乗ったりいじったりするのも好きです。
                   <br />
-                  現在はスバルの2001年式 インプレッサWRX NB-R
-                  GDA-Bに乗っています。ハイオクで燃費が9
-                  km/Lなうえ、よく壊れるので維持費が厳しいです。
-                  カスタムよりも修理にお金がかかってます。 でも速くて好き。
+                  <s>
+                    現在はスバルの2001年式 インプレッサWRX NB-R
+                    GDA-Bに乗っています。ハイオクで燃費が9
+                    km/Lなうえ、よく壊れるので維持費が厳しいです。
+                    カスタムよりも修理にお金がかかってます。 でも速くて好き。
+                  </s>
+                  <br />
+                  クラッチ切れなくなったので合掌です。ありがとうございました。
                 </Text>
               </List.Item>
             </List>
