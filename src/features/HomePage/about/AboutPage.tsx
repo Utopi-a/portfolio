@@ -72,7 +72,12 @@ export function AboutPage() {
               </List.Item>
               <List.Item>
                 <Text size={matches ? "20px" : "18px"}>
-                  筑波大学 生命環境学群生物学類（2021/04～）
+                  筑波大学 生命環境学群生物学類（2021/04～2025/03）
+                </Text>
+              </List.Item>
+              <List.Item>
+                <Text size={matches ? "20px" : "18px"}>
+                  筑波大学 人間総合科学学術院 人間総合科学研究群 フロンティア医科学学位プログラム（2025/04～）
                 </Text>
               </List.Item>
 
@@ -257,7 +262,7 @@ export function AboutPage() {
                     カスタムよりも修理にお金がかかってます。 でも速くて好き。
                   </s>
                   <br />
-                  クラッチ切れなくなったので合掌です。ありがとうございました。
+                  クラッチ切れなくなったのでGH8に乗り換えました。
                 </Text>
               </List.Item>
             </List>
