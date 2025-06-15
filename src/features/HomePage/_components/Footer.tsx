@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <Center>
       <Text mt={200} mb={20}>
-        &copy; 2024 ゆーとぴあ
+        &copy; 2025 ゆーとぴあ
       </Text>
     </Center>
   );
